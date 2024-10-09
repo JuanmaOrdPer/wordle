@@ -13,7 +13,7 @@
 .cuadrado:focus
 {
      border:1px solid yellow;
-     background-color: #ffffff;
+     background-color: transparent;
 }
 .cuadradoverde
 {

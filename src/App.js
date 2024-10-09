@@ -20,7 +20,7 @@ function App() {
      
       guesses[parameters.row-1]= replaceAt(guesses[parameters.row-1], parameters.column-1,parameters.letter);
       let isAttempComplete=true;
-      for(let i=0;i<5;i++)
+      for(let i=0;i<6;i++)
       {
         if(guesses[parameters.row-1].charAt(i)==" ")
           {
@@ -37,7 +37,7 @@ function App() {
           }
           else 
           {
-            if (currentAttempt<5) 
+            if (currentAttempt<6) 
               {
                 setCurrentAttempt(currentAttempt+1);
               } 
@@ -99,6 +99,14 @@ function App() {
             <Square row="5" column="3" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
             <Square row="5" column="4" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
             <Square row="5" column="5" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
+
+          </div>
+          <div id="row" className='row'  > 
+            <Square row="6" column="1" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
+            <Square row="6" column="2" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
+            <Square row="6" column="3" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
+            <Square row="6" column="4" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
+            <Square row="6" column="5" attempt={currentAttempt} textUpdate={(e) =>handleSquareChange(e)}></Square>
 
           </div>
           </div>
